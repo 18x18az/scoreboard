@@ -1,7 +1,9 @@
 {
   "name": "scoreboard",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Calculates scores for VEX Robotics Competition games",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "http://kumo:3000/18x18/scoreboard.git",
   "author": "Alec <alecmichaelmiller@gmail.com>",
   "license": "MIT",
@@ -17,5 +19,6 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "keywords": ["VRC", "VEX Robotics"]
 }
