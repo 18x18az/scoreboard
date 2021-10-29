@@ -1,5 +1,5 @@
 {
-  "name": "scoreboard",
+  "name": "@18x18az/scoreboard",
   "version": "1.0.0",
   "description": "Calculates scores for VEX Robotics Competition games",
   "main": "lib/index.js",
