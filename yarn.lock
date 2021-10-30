@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@18x18az/rosetta@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@18x18az/rosetta/-/rosetta-1.0.2.tgz#b98c7ad0285ab5e83f1aa1e5a69ceb9dd3b0e129"
+  integrity sha512-wOQqGoYIL13Mtsf5ycAUohmAbBAed5hoIbzRWIZkta8cEFH32jrpziOtbF8u8Phkk7JQIpiZRk1O2OJp43N4TQ==
+
 "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.14.5", "@babel/code-frame@^7.15.8":
   version "7.15.8"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.15.8.tgz#45990c47adadb00c03677baa89221f7cc23d2503"

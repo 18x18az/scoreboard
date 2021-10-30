@@ -1,6 +1,6 @@
 {
   "name": "@18x18az/scoreboard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Calculates scores for VEX Robotics Competition games",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,6 +8,7 @@
   "author": "Alec <alecmichaelmiller@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@18x18az/rosetta": "^1.0.1",
     "@types/jest": "^27.0.2",
     "jest": "^27.3.1",
     "ts-jest": "^27.0.7",
@@ -15,10 +16,18 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest --coverage"
+    "test": "jest ./src --coverage",
+    "prepare" : "yarn run build",
+    "prepublishOnly" : "yarn test"
   },
   "files": [
     "lib/**/*"
   ],
-  "keywords": ["VRC", "VEX Robotics"]
+  "keywords": [
+    "VRC",
+    "VEX Robotics"
+  ],
+  "peerDependencies": {
+    "@18x18az/rosetta": "^1.0.2"
+  }
 }
