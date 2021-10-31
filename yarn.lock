@@ -3,9 +3,9 @@
 
 
 "@18x18az/rosetta@^1.0.1":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@18x18az/rosetta/-/rosetta-1.0.3.tgz#b2e83be1dba6eaf58c43a16399eea2bfdb5fc7e5"
-  integrity sha512-8MeYLh97SFNWcchYegGk18aIyhw/rthlWZWytR6XkRUqBoJEdi9a7rUtVTZPVvFeSI2AY5wmZdZrOK66K1epxw==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@18x18az/rosetta/-/rosetta-1.0.4.tgz#a7fde6971cb1244dec235c3c4fce9e4d5f53a51b"
+  integrity sha512-Ks7LSpHZi6MHLQlC9PGejbkIXyJFdLrVXRqWv9xoH4UYietYRlNepzDgBnOvx1VhhhyUmExGrTHANZmPrFpLqQ==
 
 "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0":
   version "7.16.0"

@@ -1,4 +1,4 @@
-import { calculate } from "./calculator";
+import { calculate_score } from "./calculator";
 import { raw_results } from "@18x18az/rosetta/lib/vrc_tipping_point";
 
 describe("VRC Tipping Point Scoring", () => {
@@ -13,7 +13,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(0);
     });
 
@@ -28,7 +28,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(20);
     });
 
@@ -43,7 +43,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(6);
     });
 
@@ -58,7 +58,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(2);
     });
 
@@ -73,7 +73,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(40);
     });
 
@@ -88,7 +88,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(60);
     });
 
@@ -103,7 +103,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 2
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(80);
     });
 
@@ -118,7 +118,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(6);
     });
 
@@ -133,7 +133,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 0
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(3);
     });
 
@@ -148,7 +148,7 @@ describe("VRC Tipping Point Scoring", () => {
             elevated_mobile_goals: 2
         }
 
-        const results = calculate(toScore);
+        const results = calculate_score(toScore);
         expect(results).toBe(170);
     });
 })

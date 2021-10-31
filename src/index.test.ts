@@ -7,8 +7,8 @@ describe("Index", () => {
 
     it("Should calculate for VRC Tipping Point if told to", () => {
         const calculator = require('./vrc_tipping_point/calculator')
-        const calculate_function = jest.spyOn(calculator, 'calculate').mockReturnValue(dummy_return);
-        const result = CalculateScore(payload, Game.VRC_TIPPING_POINT);
+        const calculate_function = jest.spyOn(calculator, 'calculate_score').mockReturnValue(dummy_return);
+        const result = CalculateScore(payload, {game: Game.VRC_TIPPING_POINT} as any);
         expect(calculate_function).toBeCalledWith(payload);
         expect(result).toBe(dummy_return);
     });
@@ -16,7 +16,7 @@ describe("Index", () => {
     it("Should throw an error if it is given an invalid game", () => {
         const game = "handegg" as any;
         function wrongGame() {
-            CalculateScore(payload, game);
+            CalculateScore(payload, {game} as any);
         }
         expect(wrongGame).toThrow(`Unknown game ${game}`)
     });
