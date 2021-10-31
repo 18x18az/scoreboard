@@ -1,4 +1,4 @@
-import { raw_results } from "./interface";
+import { raw_results } from "@18x18az/rosetta/lib/vrc_tipping_point";
 import * as pt from "./points"
 
 export function calculate(raw: raw_results): number {
@@ -7,5 +7,6 @@ export function calculate(raw: raw_results): number {
         raw.rings_on_mobile_goal_bases * pt.RING_ON_MOBILE_GOAL_BASE_PT +
         raw.mobile_goals_in_alliance_home_zone * pt.MOBILE_GOAL_IN_ALLIANCE_HOME_ZONE_PT +
         raw.elevated_robots * pt.ROBOT_ELEVATED_PT +
-        raw.elevated_mobile_goals * pt.MOBILE_GOAL_ELEVATED_PT;
+        raw.elevated_mobile_goals * pt.MOBILE_GOAL_ELEVATED_PT +
+        raw.autonomous * pt.AUTONOMOUS_BONUS;
 }

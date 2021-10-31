@@ -17,8 +17,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest ./src --coverage",
-    "prepare" : "yarn run build",
-    "prepublishOnly" : "yarn test"
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn test"
   },
   "files": [
     "lib/**/*"
@@ -28,6 +28,6 @@
     "VEX Robotics"
   ],
   "peerDependencies": {
-    "@18x18az/rosetta": "^1.0.2"
+    "@18x18az/rosetta": "^1.0.3"
   }
 }
