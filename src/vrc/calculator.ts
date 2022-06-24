@@ -1,12 +1,15 @@
 import { CompetitionMeta, FullRawMatch, QualificationResults, AllowablePointFormats, ScoreAllianceMeta, ScoreTeamMeta, Game } from "@18x18az/rosetta";
 import { AllianceQualificationResults, TeamQualificationResults } from "@18x18az/rosetta/lib/vrc";
 import { CalculateQualificationResults as CalculateTippingPointQualificationResults } from "../vrc_tipping_point/calculator";
+import { CalculateQualificationResults as CalculateSpinUpQualificationResults } from "../vrc_spin_up/calculator";
 
 function CalculateTeamQualificationResults(ownResults: AllowablePointFormats, otherResults: AllowablePointFormats, teamMeta: ScoreTeamMeta, competition: CompetitionMeta ): TeamQualificationResults {
     const game = competition.game;
 
     if(game === Game.VRC_TIPPING_POINT) {
         return CalculateTippingPointQualificationResults(ownResults, otherResults, teamMeta);
+    } else if(game === Game.VRC_SPIN_UP) {
+        return CalculateSpinUpQualificationResults(ownResults, otherResults, teamMeta);
     } else {
         throw(`Unknown game ${game}`);
     }
