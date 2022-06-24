@@ -1,4 +1,4 @@
-import { calculate_score as vrc_tipping_point_calculator } from "./vrc_tipping_point/calculator";
+import { calculate_score as vrc_spin_up_calculator } from "./vrc_spin_up/calculator";
 import { CompetitionMeta, AllowablePointFormats, Game, FullRawMatch, QualificationResults, Program } from "@18x18az/rosetta";
 import { CalculateQualificationResults as CalculateVrcQualificationResults } from "./vrc/calculator";
 
@@ -6,7 +6,7 @@ export function CalculateScore(raw: AllowablePointFormats, competition: Competit
     const game = competition.game;
 
     if (game === Game.VRC_TIPPING_POINT) {
-        return vrc_tipping_point_calculator(raw);
+        return vrc_spin_up_calculator(raw);
     } else {
         throw(`Unknown game ${game}`);
     }
