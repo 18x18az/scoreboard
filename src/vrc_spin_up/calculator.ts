@@ -7,7 +7,7 @@ export function calculate_score(raw: raw_results): number {
         raw.discs_low_goal * pt.DISC_LOW_GOAL +
         raw.owned_rollers * pt.OWNED_ROLLER +
         raw.covered_tiles * pt.COVERED_TILE +
-        raw.autonomous * pt.AUTONOMOUS_BONUS;
+        raw.autonomous; // raw will be either 5 or 10
 }
 
 const AP_VALUE = 10;
